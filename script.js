@@ -617,6 +617,14 @@ function getWhatsAppOrderLink(product) {
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
+function getAssetUrl(src) {
+    if (!src) return src;
+    if (/^[a-zA-Z][a-zA-Z\d+\-.]*:/.test(src)) {
+        return src;
+    }
+    return encodeURI(src);
+}
+
 // Sélecteurs DOM
 document.addEventListener('DOMContentLoaded', () => {
     // Initialisation
@@ -774,7 +782,7 @@ function renderCategories() {
         return `
             <button class="category-card ${currentCategory === cat ? 'active' : ''}" data-category="${cat}">
                 <div class="category-image-wrapper">
-                    <img src="${categoryImageMap[cat] || categoryImageMap['Tous']}" alt="${cat}" />
+                    <img src="${getAssetUrl(categoryImageMap[cat] || categoryImageMap['Tous'])}" alt="${cat}" />
                 </div>
                 <div class="category-name">${label}</div>
             </button>
@@ -880,7 +888,7 @@ function renderProductsGrid(items) {
                 </button>
                 
                 <div class="product-image-box" onclick="openProductModal(${p.id})">
-                    <img src="${p.image}" alt="${p.name}" loading="lazy">
+                    <img src="${getAssetUrl(p.image)}" alt="${p.name}" loading="lazy">
                     <div class="product-quick-view-overlay">
                         <button class="quick-view-btn" onclick="event.stopPropagation(); openProductModal(${p.id})">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1064,7 +1072,7 @@ function renderCart() {
     cartItemsContainer.innerHTML = cart.map(item => `
         <div class="cart-item">
             <div class="cart-item-image">
-                <img src="${item.product.image}" alt="${item.product.name}">
+                <img src="${getAssetUrl(item.product.image)}" alt="${item.product.name}">
             </div>
             
             <div class="cart-item-details">
@@ -1194,7 +1202,7 @@ function openProductModal(productId) {
         <div class="modal-product-grid">
             <div class="modal-gallery">
                 <div class="gallery-main">
-                    <img id="modal-main-img" src="${product.image}" alt="${product.name}">
+                    <img id="modal-main-img" src="${getAssetUrl(product.image)}" alt="${product.name}">
                 </div>
             </div>
             
