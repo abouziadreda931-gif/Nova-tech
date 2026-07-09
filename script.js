@@ -6,23 +6,24 @@
 const products = [
     {
         id: 1,
-        name: "Apple AirPods Pro (2e Génération)",
+        name: "AirPods Pro 3",
         category: "AirPods",
         price: 100, // Prix modifié par l'utilisateur
         originalPrice: 279,
         rating: 4.9,
         reviewCount: 184,
-        image: "airpods.jpg", // Image modifiée par l'utilisateur
+        image: "IMG_4642.jpg",
         gallery: [
-            "airpods.jpg",
+            "IMG_4642.jpg",
         ],
-        description: "Découvrez le niveau supérieur du son. La réduction active du bruit bloque deux fois plus de bruits de fond indésirables. L'audio adaptatif adapte dynamiquement le contrôle du bruit à votre environnement. L'audio spatial rend l'immersion remarquablement personnelle.",
+        description: "Immergez-vous dans un son purement immersif avec les AirPods Pro 3, conçus pour offrir une qualité audio exceptionnelle, une réduction du bruit ultra-efficace et un confort optimal au quotidien. Idéals pour les appels, la musique, les voyages et les séances de travail, ils allient technologie premium, design élégant et performance sans compromis.",
         specs: {
-            "Technologie Audio": "Audio adaptatif, Réduction active du bruit, Mode Transparence",
-            "Capteurs": "Double micro à formation de faisceaux, Microphone orienté vers l'intérieur, Capteur de détection de peau",
-            "Connectivité": "Technologie sans fil Bluetooth 5.3",
-            "Résistance Eau": "IP54 résistant à la poussière, à la sueur et à l'eau",
-            "Autonomie": "Jusqu'à 6 heures d'écoute sur une seule charge"
+            "Audio Premium": "Son haute fidélité, audio spatial immersif et réglage automatique selon votre environnement",
+            "Réduction du Bruit": "Réduction active du bruit ultra performante avec mode Transparence pour rester connecté au monde",
+            "Confort & Design": "Design discret, léger et confortable pour une utilisation toute la journée",
+            "Connectivité": "Connexion Bluetooth rapide et stable avec tous vos appareils Apple et Android",
+            "Autonomie": "Jusqu'à 6 heures d'écoute sur une seule charge et recharge pratique au boîtier",
+            "Résistance": "Protection contre la poussière, la sueur et l'eau pour un usage quotidien fiable"
         },
         isFeatured: true,
         isBestSeller: true,
@@ -30,25 +31,26 @@ const products = [
     },
     {
         id: 2,
-        name: "Apple AirPods Max - Gris Sidéral",
-        category: "casque",
-        price: 549,
-        originalPrice: 599,
+        name: "AirPods 4",
+        category: "AirPods",
+        price: 249,
+        originalPrice: 299,
         rating: 4.8,
         reviewCount: 95,
-        image: "airpods-max.png",
+        image: "image copy 7.png",
         gallery: [
-            "airpods-max.png",
-            "sony-wf1000xm5.png",
-            "projct/les images/b_Luxury_social_media_.png"
+            "image copy 7.png",
+            "IMG_4642.jpg",
+            "airpods-max.png"
         ],
-        description: "Les AirPods Max combinent un audio haute fidélité avec la meilleure réduction active du bruit du marché pour offrir une expérience d'écoute inégalée. Chaque pièce de leur haut-parleur conçu sur mesure produit un son avec une distorsion ultra-faible.",
+        description: "Découvrez les AirPods 4, un compagnon audio moderne pensé pour offrir un son immersif, une excellente réduction du bruit et un confort exceptionnel au quotidien. Parfaits pour la musique, les appels et vos déplacements, ils allient élégance, simplicité et technologie haut de gamme.",
         specs: {
-            "Taille du Transducteur": "Transducteur dynamique conçu par Apple de 40 mm",
-            "Réduction du Bruit": "Réduction active du bruit et mode Transparence",
-            "Poids": "384,8 grammes",
-            "Connectivité": "Bluetooth 5.0",
-            "Autonomie": "Jusqu'à 20 heures d'écoute haute fidélité"
+            "Audio Immersif": "Son clair et équilibré avec une expérience d'écoute naturelle et précise",
+            "Réduction du Bruit": "Mode réduction active du bruit pour profiter d'un environnement plus calme",
+            "Confort": "Design léger et confortable pour une utilisation longue durée",
+            "Connectivité": "Connexion Bluetooth rapide et stable avec vos appareils préférés",
+            "Autonomie": "Autonomie fiable pour toute la journée avec recharge pratique",
+            "Charge Rapide": "Recharge rapide et pratique pour ne jamais rester sans musique"
         },
         isFeatured: true,
         isBestSeller: false,
@@ -56,6 +58,293 @@ const products = [
     },
     {
         id: 3,
+        name: "AirPods Pro 2",
+        category: "AirPods",
+        price: 199,
+        originalPrice: 249,
+        rating: 4.7,
+        reviewCount: 142,
+        image: "image copy 8.png",
+        gallery: [
+            "image copy 8.png",
+            "IMG_4642.jpg",
+            "image copy 7.png"
+        ],
+        description: "Un produit audio élégant et performant, pensé pour offrir une expérience d'écoute moderne avec un design soigné et des fonctionnalités pratiques au quotidien. Idéal pour les amateurs de musique, les appels et les déplacements.",
+        specs: {
+            "Qualité Audio": "Son clair, équilibré et agréable à écouter",
+            "Confort": "Design léger et facile à porter toute la journée",
+            "Connectivité": "Connexion rapide et stable avec vos appareils",
+            "Autonomie": "Autonomie fiable pour plusieurs heures d'utilisation",
+            "Style": "Aspect premium et moderne qui s'adapte à votre quotidien"
+        },
+        isFeatured: false,
+        isBestSeller: false,
+        isNewArrival: true
+    },
+    {
+        id: 4,
+        name: "AirPods Pro 5s",
+        category: "AirPods",
+        price: 299,
+        originalPrice: 349,
+        rating: 4.8,
+        reviewCount: 128,
+        image: "image copy 9.png",
+        gallery: [
+            "image copy 9.png",
+            "image copy 8.png",
+            "IMG_4642.jpg"
+        ],
+        description: "Profitez d'un son premium, d'une réduction du bruit performante et d'un design moderne avec les AirPods Pro 5s. Parfaits pour une utilisation quotidienne, les appels et la détente, ils offrent un excellent équilibre entre confort, technologie et élégance.",
+        specs: {
+            "Audio Premium": "Qualité sonore claire, détaillée et immersive",
+            "Réduction du Bruit": "Isolation acoustique avancée pour un meilleur confort d'écoute",
+            "Confort": "Design léger et agréable à porter toute la journée",
+            "Connectivité": "Connexion Bluetooth rapide et stable avec vos appareils",
+            "Autonomie": "Autonomie durable pour plusieurs heures d'écoute continue",
+            "Style": "Esthétique moderne et premium qui attire les clients"
+        },
+        isFeatured: true,
+        isBestSeller: false,
+        isNewArrival: true
+    },
+    {
+        id: 10,
+        name: "20W Power Adapter",
+        category: "Chargeurs",
+        price: 49,
+        originalPrice: 69,
+        rating: 4.6,
+        reviewCount: 87,
+        image: "image copy 10.png",
+        gallery: [
+            "image copy 10.png",
+            "charger-anker-120w.png",
+            "magsafe-station.jpg"
+        ],
+        description: "Chargez rapidement vos appareils avec cet adaptateur compact de 20W, conçu pour offrir une recharge fiable et pratique au quotidien. Idéal pour votre téléphone, votre tablette ou vos accessoires USB-C.",
+        specs: {
+            "Puissance": "20W de charge rapide",
+            "Connecteur": "USB-C compatible avec plusieurs appareils",
+            "Compacité": "Design compact et facile à transporter",
+            "Sécurité": "Protection contre la surchauffe et les surtensions",
+            "Utilisation": "Parfait pour la maison, le bureau ou les déplacements"
+        },
+        isFeatured: false,
+        isBestSeller: false,
+        isNewArrival: true
+    },
+    {
+        id: 11,
+        name: "USB-C to Lightning Cable(1m)",
+        category: "Chargeurs",
+        price: 29,
+        originalPrice: 39,
+        rating: 4.7,
+        reviewCount: 64,
+        image: "image copy 11.png",
+        gallery: [
+            "image copy 11.png",
+            "image copy 10.png",
+            "IMG_4642.jpg"
+        ],
+        description: "Un câble fiable et pratique en 1 mètre pour recharger et synchroniser vos appareils Apple avec rapidité. Compact, solide et parfait pour le quotidien.",
+        specs: {
+            "Longueur": "1 mètre",
+            "Connecteur": "USB-C vers Lightning",
+            "Compatibilité": "iPhone, iPad et autres appareils Apple",
+            "Durabilité": "Conception robuste pour une utilisation quotidienne",
+            "Utilisation": "Recharge et transfert de données simple et rapide"
+        },
+        isFeatured: false,
+        isBestSeller: false,
+        isNewArrival: true
+    },
+    {
+        id: 12,
+        name: "USB-C 25W Power Adapter",
+        category: "Chargeurs",
+        price: 39,
+        originalPrice: 49,
+        rating: 4.8,
+        reviewCount: 72,
+        image: "image copy 12.png",
+        gallery: [
+            "image copy 12.png",
+            "image copy 10.png",
+            "magsafe-station.jpg"
+        ],
+        description: "Profitez d'une charge rapide et fiable avec cet adaptateur USB-C de 25W, parfait pour votre smartphone, votre tablette ou vos accessoires du quotidien.",
+        specs: {
+            "Puissance": "25W de charge rapide",
+            "Connecteur": "USB-C polyvalent et pratique",
+            "Mobilité": "Design compact pour le bureau et les déplacements",
+            "Sécurité": "Protection contre la surchauffe et les surtensions",
+            "Compatibilité": "Compatible avec de nombreux appareils USB-C"
+        },
+        isFeatured: false,
+        isBestSeller: false,
+        isNewArrival: true
+    },
+    {
+        id: 13,
+        name: "USB-C Charge Cable (1m)",
+        category: "Chargeurs",
+        price: 19,
+        originalPrice: 29,
+        rating: 4.6,
+        reviewCount: 58,
+        image: "image copy 13.png",
+        gallery: [
+            "image copy 13.png",
+            "image copy 12.png",
+            "image copy 11.png"
+        ],
+        description: "Un câble USB-C pratique et fiable pour recharger vos appareils en toute simplicité. Compact, robuste et idéal pour une utilisation maison ou en déplacement.",
+        specs: {
+            "Longueur": "1 mètre",
+            "Connecteur": "USB-C vers USB-C",
+            "Compatibilité": "Compatible avec de nombreux appareils USB-C",
+            "Durabilité": "Conception solide pour un usage quotidien",
+            "Utilisation": "Recharge rapide et pratique au quotidien"
+        },
+        isFeatured: false,
+        isBestSeller: false,
+        isNewArrival: true
+    },
+    {
+        id: 14,
+        name: "Oraimo SpaceBuds Air",
+        category: "AirPods",
+        price: 129,
+        originalPrice: 159,
+        rating: 4.6,
+        reviewCount: 73,
+        image: "image copy 15.png",
+        gallery: [
+            "image copy 15.png",
+            "image copy 14.png",
+            "image copy 13.png"
+        ],
+        description: "Découvrez les Oraimo SpaceBuds Air, des écouteurs sans fil confortables et élégants offrant une expérience audio agréable pour la musique, les appels et les déplacements. Un excellent choix pour qui cherche un produit moderne à prix accessible.",
+        specs: {
+            "Audio": "Son clair et équilibré pour musique et appels",
+            "Confort": "Design léger et pratique pour une utilisation longue durée",
+            "Connectivité": "Connexion Bluetooth rapide et stable",
+            "Autonomie": "Autonomie fiable pour plusieurs heures d'écoute",
+            "Style": "Élégants et discrets, parfaits au quotidien"
+        },
+        isFeatured: false,
+        isBestSeller: false,
+        isNewArrival: true
+    },
+    {
+        id: 15,
+        name: "Oraimo OTW-324s",
+        category: "AirPods",
+        price: 99,
+        originalPrice: 129,
+        rating: 4.5,
+        reviewCount: 61,
+        image: "image copy 14.png",
+        gallery: [
+            "image copy 14.png",
+            "image copy 15.png",
+            "image copy 13.png"
+        ],
+        description: "Les Oraimo OTW-324s offrent un design moderne, un confort agréable et une expérience audio fiable pour la musique et les appels. Un choix pratique pour les utilisateurs qui recherchent un produit accessible et élégant.",
+        specs: {
+            "Audio": "Qualité sonore claire et agréable au quotidien",
+            "Confort": "Design léger et confortable à porter",
+            "Connectivité": "Connexion Bluetooth simple et stable",
+            "Autonomie": "Autonomie pratique pour plusieurs heures d'écoute",
+            "Style": "Aspect moderne et discret"
+        },
+        isFeatured: false,
+        isBestSeller: false,
+        isNewArrival: true
+    },
+    {
+        id: 16,
+        name: "Oraimo Opn-373",
+        category: "AirPods",
+        price: 89,
+        originalPrice: 119,
+        rating: 4.4,
+        reviewCount: 54,
+        image: "image copy 16.png",
+        gallery: [
+            "image copy 16.png",
+            "image copy 15.png",
+            "image copy 14.png"
+        ],
+        description: "Les Oraimo Opn-373 combinent confort, design moderne et une expérience audio agréable pour la musique, les appels et les déplacements. Un produit accessible pour profiter d'un son simple et pratique au quotidien.",
+        specs: {
+            "Audio": "Son clair et agréable pour la musique et les appels",
+            "Confort": "Design léger et pratique à porter",
+            "Connectivité": "Connexion Bluetooth stable et facile",
+            "Autonomie": "Autonomie fiable pour plusieurs heures d'écoute",
+            "Style": "Élégant et discret"
+        },
+        isFeatured: false,
+        isBestSeller: false,
+        isNewArrival: true
+    },
+    {
+        id: 17,
+        name: "Oraimo Opn-373 Light Gold",
+        category: "AirPods",
+        price: 95,
+        originalPrice: 125,
+        rating: 4.5,
+        reviewCount: 57,
+        image: "image copy 17.png",
+        gallery: [
+            "image copy 17.png",
+            "image copy 16.png",
+            "image copy 15.png"
+        ],
+        description: "L'édition Oraimo Opn-373 Light Gold apporte un style élégant et une expérience audio agréable pour la musique, les appels et les déplacements. Un produit raffiné, pratique et accessible au quotidien.",
+        specs: {
+            "Audio": "Son clair et agréable pour la musique et les appels",
+            "Style": "Design Light Gold élégant et moderne",
+            "Confort": "Confort optimal pour une utilisation prolongée",
+            "Connectivité": "Connexion Bluetooth stable et simple",
+            "Autonomie": "Autonomie pratique pour plusieurs heures d'écoute"
+        },
+        isFeatured: false,
+        isBestSeller: false,
+        isNewArrival: true
+    },
+    {
+        id: 18,
+        name: "Mini Ventillateure",
+        category: "Enceintes",
+        price: 59,
+        originalPrice: 79,
+        rating: 4.3,
+        reviewCount: 42,
+        image: "Mini.PNG",
+        gallery: [
+            "Mini.PNG",
+            "image copy 17.png",
+            "image copy 16.png"
+        ],
+        description: "Le Mini Ventillateure offre une ventilation pratique et portable pour les espaces personnels, les bureaux et les déplacements. Compact, léger et facile à utiliser au quotidien.",
+        specs: {
+            "Portable": "Design compact et facile à transporter",
+            "Ventilation": "Souffle léger et pratique pour rafraîchir l'air",
+            "Utilisation": "Parfait pour bureau, chambre ou voyages",
+            "Économie": "Consommation légère et usage simple",
+            "Style": "Apparence moderne et discrète"
+        },
+        isFeatured: false,
+        isBestSeller: false,
+        isNewArrival: true
+    },
+    {
+        id: 5,
         name: "Écouteurs sans fil Sony WF-1000XM5",
         category: "Écouteurs",
         price: 299,
@@ -1211,3 +1500,4 @@ function initEventListeners() {
     
     updateWishlistBadges();
 }
+
