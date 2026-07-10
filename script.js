@@ -610,12 +610,8 @@ let slideTimer;
 const WHATSAPP_NUMBER = '212694350619';
 
 function getWhatsAppOrderLink(product) {
-    const currentUrl = new URL(window.location.href);
-    currentUrl.hash = '';
-    currentUrl.searchParams.set('product', product.id);
-    const productPageUrl = currentUrl.toString();
     const imageUrl = getAssetUrl(product.image);
-    const message = `Bonjour, je suis intéressé(e) par le produit : ${product.name} (${product.price} DH).\nLien du produit : ${productPageUrl}\nImage du produit : ${imageUrl}`;
+    const message = `Bonjour, je suis intéressé(e) par le produit : ${product.name} (${product.price} DH).\nImage du produit : ${imageUrl}`;
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
