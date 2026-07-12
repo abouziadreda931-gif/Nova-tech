@@ -8,7 +8,7 @@ const products = [
         id: 1,
         name: "AirPods Pro 3",
         category: "AirPods",
-        price: 99, // Prix modifié par l'utilisateur
+        price: 100, // Prix modifié par l'utilisateur
         originalPrice: 279,
         rating: 4.9,
         reviewCount: 184,
@@ -33,7 +33,7 @@ const products = [
         id: 2,
         name: "AirPods 4",
         category: "AirPods",
-        price: 99,
+        price: 249,
         originalPrice: 299,
         rating: 4.8,
         reviewCount: 95,
@@ -60,7 +60,7 @@ const products = [
         id: 3,
         name: "AirPods Pro 2",
         category: "AirPods",
-        price: 99,
+        price: 199,
         originalPrice: 249,
         rating: 4.7,
         reviewCount: 142,
@@ -86,7 +86,7 @@ const products = [
         id: 4,
         name: "AirPods Pro 5s",
         category: "AirPods",
-        price: 259,
+        price: 299,
         originalPrice: 349,
         rating: 4.8,
         reviewCount: 128,
@@ -111,9 +111,9 @@ const products = [
     },
     {
         id: 10,
-        name: "20W Power Adapter Original",
+        name: "20W Power Adapter",
         category: "Chargeurs",
-        price: 99,
+        price: 49,
         originalPrice: 69,
         rating: 4.6,
         reviewCount: 87,
@@ -137,9 +137,9 @@ const products = [
     },
     {
         id: 11,
-        name: "USB-C to Lightning Cable Original (1m)",
+        name: "USB-C to Lightning Cable(1m)",
         category: "Chargeurs",
-        price: 89,
+        price: 29,
         originalPrice: 39,
         rating: 4.7,
         reviewCount: 64,
@@ -163,9 +163,9 @@ const products = [
     },
     {
         id: 12,
-        name: "USB-C 25W Power Adapter Original",
+        name: "USB-C 25W Power Adapter",
         category: "Chargeurs",
-        price: 119,
+        price: 39,
         originalPrice: 49,
         rating: 4.8,
         reviewCount: 72,
@@ -189,9 +189,9 @@ const products = [
     },
     {
         id: 13,
-        name: "USB-C Charge Cable Original (1m)",
+        name: "USB-C Charge Cable (1m)",
         category: "Chargeurs",
-        price: 89,
+        price: 19,
         originalPrice: 29,
         rating: 4.6,
         reviewCount: 58,
@@ -217,7 +217,7 @@ const products = [
         id: 14,
         name: "Oraimo SpaceBuds Air",
         category: "AirPods",
-        price: 159,
+        price: 129,
         originalPrice: 159,
         rating: 4.6,
         reviewCount: 73,
@@ -243,7 +243,7 @@ const products = [
         id: 15,
         name: "Oraimo OTW-324s",
         category: "AirPods",
-        price: 159,
+        price: 99,
         originalPrice: 129,
         rating: 4.5,
         reviewCount: 61,
@@ -269,7 +269,7 @@ const products = [
         id: 16,
         name: "Oraimo Opn-373",
         category: "AirPods",
-        price: 259,
+        price: 89,
         originalPrice: 119,
         rating: 4.4,
         reviewCount: 54,
@@ -295,7 +295,7 @@ const products = [
         id: 17,
         name: "Oraimo Opn-373 Light Gold",
         category: "AirPods",
-        price: 259,
+        price: 95,
         originalPrice: 125,
         rating: 4.5,
         reviewCount: 57,
@@ -320,7 +320,7 @@ const products = [
     {
         id: 18,
         name: "Mini Ventillateure",
-        category: "Ventilateurs",
+        category: "Enceintes",
         price: 59,
         originalPrice: 79,
         rating: 4.3,
@@ -344,24 +344,101 @@ const products = [
         isNewArrival: true
     },
     {
-        id: 6,
-        name: "Oraimo Watch 4 Plus",
-        category: "Montres Connectées",
-        price: 219,
-        originalPrice: 499,
+        id: 5,
+        name: "Écouteurs sans fil Sony WF-1000XM5",
+        category: "Écouteurs",
+        price: 299,
+        originalPrice: 299,
+        rating: 4.7,
+        reviewCount: 142,
+        image: "sony-wf1000xm5.png",
+        gallery: [
+            "sony-wf1000xm5.png",
+            "airpods-max.png",
+            "projct/les images/b_Luxury_social_media_.png"
+        ],
+        description: "Le WF-1000XM5 dispose d'une technologie de pointe pour offrir une qualité sonore supérieure et la meilleure performance de réduction de bruit sans fil du marché. Des processeurs audio en temps réel alimentent le transducteur conçu spécialement.",
+        specs: {
+            "Processeur": "Processeur intégré V2 et processeur de réduction de bruit HD QN2e",
+            "Codecs Audio": "SBC, AAC, LDAC, LC3",
+            "Autonomie": "Jusqu'à 8 heures (24 heures au total avec le boîtier)",
+            "Résistance à l'Eau": "IPX4",
+            "Réponse en Fréquence": "20 Hz - 20 000 Hz"
+        },
+        isFeatured: false,
+        isBestSeller: true,
+        isNewArrival: false
+    },
+    {
+        id: 4,
+        name: "Chargeur secteur Anker Prime 120W GaN",
+        category: "Chargeurs",
+        price: 79,
+        originalPrice: 89,
         rating: 4.8,
-        reviewCount: 156,
+        reviewCount: 320,
+        image: "projct/les images/b_Luxury_social_media_.png",
+        gallery: [
+            "projct/les images/b_Luxury_social_media_.png",
+            "airpods-max.png"
+        ],
+        description: "Chargez un MacBook Pro 16 à 50% en seulement 28 minutes ou alimentez jusqu'à 3 devices simultanément avec notre chargeur GaNPrime ultra-compact de 120W. Le contrôle de température ActiveShield 2.0 protège vos appareils en continu.",
+        specs: {
+            "Puissance Totale": "120W Max",
+            "Ports": "2x USB-C, 1x USB-A",
+            "Technologie": "GaNPrime, PowerIQ 4.0",
+            "Protection": "Contrôle de température ActiveShield 2.0",
+            "Dimensions": "43 x 29 x 59 mm"
+        },
+        isFeatured: false,
+        isBestSeller: true,
+        isNewArrival: false
+    },
+    {
+        id: 5,
+        name: "Station de charge sans fil MagSafe 3-en-1",
+        category: "Chargeurs",
+        price: 129,
+        originalPrice: 149,
+        rating: 4.6,
+        reviewCount: 88,
+        image: "magsafe-station.jpg",
+        gallery: [
+            "magsafe-station.jpg",
+            "airpods-max.png"
+        ],
+        description: "Alimentez tout votre écosystème Apple en même temps sur un support élégant. L'alignement magnétique MagSafe fournit une charge sans fil rapide de 15W à votre iPhone tout en chargeant votre Apple Watch et vos AirPods.",
+        specs: {
+            "Entrée": "Chargeur secteur USB-C 30W (inclus)",
+            "Sortie (Téléphone)": "Jusqu'à 15W MagSafe",
+            "Sortie (AirPods)": "Support de charge sans fil 5W",
+            "Sortie (Watch)": "Chargeur rapide 5W pour Apple Watch",
+            "Matériau": "Aluminium anodisé et silicone doux"
+        },
+        isFeatured: true,
+        isBestSeller: false,
+        isNewArrival: false
+    },
+    {
+        id: 6,
+        name: "Batterie externe Anker PowerCore 24K (737)",
+        category: "Batteries Externes",
+        price: 149,
+        originalPrice: 169,
+        rating: 4.9,
+        reviewCount: 215,
         image: "charger-anker-120w.png",
         gallery: [
-            "charger-anker-120w.png"
+            "charger-anker-120w.png",
+            "sony-wf1000xm5.png"
         ],
-        description: "La montre Oraimo Watch 4 Plus offre un grand écran ultra-lumineux, des appels Bluetooth clairs et un suivi complet de la santé et du sport. Son design élégant s'adapte à toutes les occasions.",
+        description: "Équipée de la technologie Power Delivery 3.1 bidirectionnelle, cette batterie externe offre une charge ultra-puissante de 140W. Elle intègre un écran numérique intelligent affichant l'autonomie restante et la puissance d'entrée/sortie.",
         specs: {
-            "Écran": "2.01 pouces HD",
-            "Connectivité": "Appels Bluetooth & Notifications",
-            "Santé": "Moniteur de fréquence cardiaque, SpO2 et Sommeil",
-            "Modes Sport": "Plus de 100 modes d'entraînement",
-            "Batterie": "Jusqu'à 7 jours d'autonomie"
+            "Capacité": "24 000 mAh",
+            "Ports": "2x USB-C, 1x USB-A",
+            "Entrée/Sortie Max": "140W PD 3.1",
+            "Écran Intelligent": "Écran couleur TFT",
+            "Temps de Recharge": "0 à 100% en 52 minutes (avec chargeur 140W)"
         },
         isFeatured: true,
         isBestSeller: true,
@@ -369,119 +446,150 @@ const products = [
     },
     {
         id: 7,
-        name: "Oraimo Watch Vivid Amoled",
+        name: "Apple Watch Ultra 2 (GPS + Cellular)",
         category: "Montres Connectées",
-        price: 219,
-        originalPrice: 650,
-        rating: 4.7,
-        reviewCount: 88,
+        price: 799,
+        originalPrice: 799,
+        rating: 4.9,
+        reviewCount: 112,
         image: "apple-watch-ultra2.jpg",
         gallery: [
+            "apple-watch-ultra2.jpg",
+            "galaxy-watch6-classic.jpg",
+            "airpods-max.png"
+        ],
+        description: "La montre de sport et d'aventure ultime est encore plus performante. Équipée de la puce S9 SiP, d'un bouton Action personnalisable, du geste double-toucher et d'un boîtier en titane ultra-léger avec écran Retina Always-On.",
+        specs: {
+            "Taille du Boîtier": "49 mm en titane aérospatial",
+            "Résistance à l'Eau": "100m, étanche, plongée de loisir à 40m",
+            "Luminosité Écran": "Jusqu'à 3 000 nits Retina Always-On",
+            "Capteurs": "Oxygène sanguin, ECG, fréquence cardiaque, profondimètre",
+            "Autonomie": "Jusqu'à 36 heures (72 heures en mode économie)"
+        },
+        isFeatured: true,
+        isBestSeller: false,
+        isNewArrival: true
+    },
+    {
+        id: 8,
+        name: "Samsung Galaxy Watch 6 Classic",
+        category: "Montres Connectées",
+        price: 349,
+        originalPrice: 399,
+        rating: 4.7,
+        reviewCount: 167,
+        image: "galaxy-watch6-classic.jpg",
+        gallery: [
+            "galaxy-watch6-classic.jpg",
             "apple-watch-ultra2.jpg"
         ],
-        description: "Découvrez l'Oraimo Watch Vivid avec son superbe écran AMOLED, sa clarté exceptionnelle en plein soleil et son suivi complet de la santé et du sommeil. Parfaite pour un style moderne et actif.",
+        description: "Affichez votre style avec une lunette rotative physique et des cadrans personnalisés. Suivez vos entraînements avec des zones de fréquence cardiaque personnalisées et analysez votre composition corporelle.",
         specs: {
-            "Écran": "1.75 pouces AMOLED",
-            "Autonomie": "Jusqu'à 7 jours de batterie",
-            "Étanchéité": "IP68 résistant à l'eau",
-            "Santé": "Fréquence cardiaque, sommeil, SpO2",
-            "Appels": "Bluetooth & Notifications intelligentes"
+            "Taille du Boîtier": "43 mm / 47 mm Acier Inoxydable",
+            "Lunette": "Lunette rotative physique de navigation",
+            "Système": "Wear OS propulsé par Samsung",
+            "Connectivité": "Bluetooth 5.3, Wi-Fi, NFC, GPS",
+            "Batterie": "Jusqu'à 40 hours d'utilisation typique"
+        },
+        isFeatured: false,
+        isBestSeller: true,
+        isNewArrival: false
+    },
+    {
+        id: 9,
+        name: "Enceinte intelligente Sonos Era 100",
+        category: "Enceintes",
+        price: 249,
+        originalPrice: 249,
+        rating: 4.8,
+        reviewCount: 74,
+        image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&auto=format&fit=crop&q=80",
+        gallery: [
+            "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&auto=format&fit=crop&q=80",
+            "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&auto=format&fit=crop&q=80"
+        ],
+        description: "Une merveille acoustique pour toutes les pièces. L'enceinte Sonos Era 100 offre un son stéréo finement réglé et des basses riches pour remplir votre espace. Diffusez via Wi-Fi ou Bluetooth en toute simplicité.",
+        specs: {
+            "Amplificateurs": "Trois amplificateurs numériques de classe D",
+            "Microphones": "Réseau de micros pour le contrôle vocal",
+            "Connectivité": "Wi-Fi 6, Bluetooth 5.0, Entrée ligne USB-C",
+            "Assistant Vocal": "Alexa d'Amazon & Sonos Voice intégrés",
+            "Dimensions": "182 x 120 x 130 mm"
         },
         isFeatured: true,
         isBestSeller: false,
-        isNewArrival: true
+        isNewArrival: false
     },
     {
-        id: 20,
-        name: "Air Cooler Fan",
-        category: "Ventilateurs",
+        id: 10,
+        name: "Enceinte portable Bluetooth JBL Flip 6",
+        category: "Enceintes",
         price: 119,
         originalPrice: 129,
-        rating: 4.6,
-        reviewCount: 45,
-        image: "image copy 19.png",
-        gallery: [
-            "image copy 19.png"
-        ],
-        description: "Rafraîchissez votre espace avec le Air Cooler Fan, un ventilateur compact, puissant et silencieux, parfait pour le bureau ou la maison.",
-        specs: {
-            "Type": "Ventilateur de refroidissement",
-            "Vitesses": "3 niveaux de réglage",
-            "Design": "Compact et portable",
-            "Niveau Sonore": "Ultra-silencieux",
-            "Alimentation": "USB ou sur secteur"
-        },
-        isFeatured: true,
-        isBestSeller: false,
-        isNewArrival: true
-    },
-    {
-        id: 21,
-        name: "Casque P9",
-        category: "Casque",
-        price: 79,
-        originalPrice: 250,
-        rating: 4.5,
-        reviewCount: 32,
-        image: "image copy 22.png",
-        gallery: [
-            "image copy 22.png"
-        ],
-        description: "Profitez d'un son immersif et d'un confort optimal avec le Casque P9. Connexion sans fil stable, réduction de bruit passive et autonomie durable pour toutes vos activités.",
-        specs: {
-            "Type": "Casque sans fil",
-            "Autonomie": "Jusqu'à 10 heures de lecture",
-            "Connectivité": "Bluetooth 5.0",
-            "Chargement": "Micro-USB",
-            "Confort": "Coussinets doux et arceau réglable"
-        },
-        isFeatured: true,
-        isBestSeller: false,
-        isNewArrival: true
-    },
-    {
-        id: 22,
-        name: "Casque Bluetooth JBL",
-        category: "Casque",
-        price: 99,
-        originalPrice: 590,
         rating: 4.7,
-        reviewCount: 54,
-        image: "image copy 21.png",
+        reviewCount: 258,
+        image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&auto=format&fit=crop&q=80",
         gallery: [
-            "image copy 21.png"
+            "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&auto=format&fit=crop&q=80",
+            "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&auto=format&fit=crop&q=80"
         ],
-        description: "Bénéficiez du son de qualité supérieure Pure Bass de JBL avec ce casque sans fil. Léger, pliable et confortable, il vous offre jusqu'à 40 heures d'autonomie pour un plaisir d'écoute prolongé.",
+        description: "Emportez le puissant son JBL Pro partout avec vous. Étanche et résistante à la poussière (norme IP67), elle est idéale pour toutes vos sorties extérieures avec son système de haut-parleur à 2 voies et son autonomie de 12 heures.",
         specs: {
-            "Type": "Casque supra-auriculaire",
-            "Autonomie": "Jusqu'à 40 heures",
-            "Son": "JBL Pure Bass",
-            "Connectivité": "Bluetooth 5.0",
-            "Confort": "Conception légère et pliable"
+            "Puissance de Sortie": "20W RMS pour le woofer, 10W RMS pour le tweeter",
+            "Réponse en Fréquence": "63 Hz - 20 000 Hz",
+            "Étanchéité": "IP67 étanche à l'eau et à la poussière",
+            "Autonomie": "Jusqu'à 12 heures de lecture continue",
+            "Poids": "0,55 kg"
         },
-        isFeatured: true,
+        isFeatured: false,
         isBestSeller: true,
         isNewArrival: true
     },
     {
-        id: 23,
-        name: "Casque Bluetooth Oraimo",
-        category: "Casque",
-        price: 249,
-        originalPrice: 290,
+        id: 11,
+        name: "Porte-cartes en cuir Apple avec MagSafe",
+        category: "Accessoires Téléphone",
+        price: 59,
+        originalPrice: 69,
+        rating: 4.5,
+        reviewCount: 304,
+        image: "https://images.unsplash.com/photo-1605787020600-b9ebd5df1d07?w=600&auto=format&fit=crop&q=80",
+        gallery: [
+            "https://images.unsplash.com/photo-1605787020600-b9ebd5df1d07?w=600&auto=format&fit=crop&q=80",
+            "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=600&auto=format&fit=crop&q=80"
+        ],
+        description: "Conçu pour allier style et fonctionnalité, le porte-cartes en cuir pour iPhone avec MagSafe est le moyen idéal de garder vos cartes à portée de main. Fabriqué dans un cuir européen de haute qualité.",
+        specs: {
+            "Matériau": "Cuir européen de qualité supérieure",
+            "Capacité": "Jusqu'à 3 cartes de crédit",
+            "Protection": "Blindage pour protéger les cartes à bande magnétique",
+            "Réseau Localiser": "Prend en charge la localisation s'il est détaché",
+            "Compatibilité": "Modèles iPhone 12, 13, 14, 15"
+        },
+        isFeatured: false,
+        isBestSeller: true,
+        isNewArrival: false
+    },
+    {
+        id: 12,
+        name: "Support Trépied Mobile Peak Design",
+        category: "Accessoires Téléphone",
+        price: 49,
+        originalPrice: 49,
         rating: 4.6,
         reviewCount: 42,
-        image: "image copy 20.png",
+        image: "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=600&auto=format&fit=crop&q=80",
         gallery: [
-            "image copy 20.png"
+            "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=600&auto=format&fit=crop&q=80",
+            "https://images.unsplash.com/photo-1605787020600-b9ebd5df1d07?w=600&auto=format&fit=crop&q=80"
         ],
-        description: "Le casque Bluetooth Oraimo vous offre des basses profondes et un confort d'écoute exceptionnel. Grâce à son autonomie longue durée et sa conception ergonomique, il est parfait pour un usage quotidien.",
+        description: "Un trépied ultra-léger et de précision qui se glisse à plat dans votre poche. La fixation magnétique SlimLink s'associe instantanément avec les coques MagSafe ou coques Peak Design.",
         specs: {
-            "Type": "Casque supra-auriculaire",
-            "Autonomie": "Jusqu'à 20 heures",
-            "Son": "Basses améliorées",
-            "Connectivité": "Bluetooth 5.0",
-            "Confort": "Coussinets doux et arceau ajustable"
+            "Matériau": "Aluminium usiné et anodisé",
+            "Rotule": "Rotule à bille micro-friction réglable",
+            "Stabilité": "Pieds antidérapants en caoutchouc",
+            "Épaisseur": "Seulement 5,5 mm une fois plié",
+            "Poids": "96 grammes"
         },
         isFeatured: true,
         isBestSeller: false,
@@ -634,8 +742,8 @@ function renderCategories() {
     if (!categoryContainer) return;
     
     const rawCategories = products.map(p => p.category);
-    const uniqueCategories = [...new Set(['Tous', 'Casque', ...rawCategories])];
-    const desiredCategoryOrder = ['Tous', 'AirPods', 'Casque', 'casque', 'Chargeurs', 'Écouteurs', 'Batteries Externes', 'Montres Connectées', 'Ventilateurs'];
+    const uniqueCategories = ['Tous', ...new Set(rawCategories)];
+    const desiredCategoryOrder = ['Tous', 'AirPods', 'casque', 'Chargeurs', 'Écouteurs', 'Batteries Externes', 'Montres Connectées', 'Enceintes'];
     const sortedCategories = desiredCategoryOrder.filter(cat => uniqueCategories.includes(cat)).concat(uniqueCategories.filter(cat => !desiredCategoryOrder.includes(cat) && cat !== 'Tous' && cat !== 'Accessoires Téléphone'));
     
     const categoryImageMap = rawCategories.reduce((map, category, index) => {
@@ -649,7 +757,7 @@ function renderCategories() {
         'Écouteurs': 'casque',
         'Batteries Externes': 'baf',
         'casque': 'power bank',
-        'Ventilateurs': 'ventilateure'
+        'Enceintes': 'ventilateure'
     };
     categoryImageMap['Tous'] = 'airpods-max.png';
     categoryImageMap['AirPods'] = 'image copy.png';
@@ -657,9 +765,8 @@ function renderCategories() {
     categoryImageMap['Chargeurs'] = 'image copy 2.png';
     categoryImageMap['Batteries Externes'] = 'image copy 3.png';
     categoryImageMap['casque'] = 'image copy 4.png';
-    categoryImageMap['Ventilateurs'] = 'image copy 6.png';
+    categoryImageMap['Enceintes'] = 'image copy 6.png';
     categoryImageMap['Montres Connectées'] = 'image.png';
-    categoryImageMap['Casque'] = 'image copy 5.png';
     
     categoryContainer.innerHTML = sortedCategories.map(cat => {
         const label = categoryLabelMap[cat] || cat;
