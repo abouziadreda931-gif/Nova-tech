@@ -491,7 +491,7 @@ const products = [
         id: 24,
         name: "Pack Apple",
         category: "offre",
-        price: 249,
+        price: 180,
         originalPrice: 429,
         rating: 4.9,
         reviewCount: 125,
